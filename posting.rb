@@ -10,7 +10,7 @@ class Posting < Formula
   depends_on "cmake" => :build
   depends_on "rust" => :build
   depends_on "cython"
-  depends_on "python@3.11"
+  depends_on "python@3.10"
 
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
@@ -163,7 +163,7 @@ class Posting < Formula
   end
 
   def install
-    virtualenv_create(libexec, "python3.11")
+    virtualenv_create(libexec, "python3.10")
     virtualenv_install_with_resources
   end
 

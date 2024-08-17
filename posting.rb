@@ -163,16 +163,7 @@ class Posting < Formula
 
   def install
     virtualenv_create(libexec, "python3.11")
-    # Install all resources directly into the virtualenv
-    resources.each do |r|
-      r.stage do
-        if r.name == "tree-sitter-languages"
-          system libexec/"bin/pip", "install", "--no-deps", "."
-        else
-          system libexec/"bin/pip", "install", "--no-deps", "-v", "."
-        end
-      end
-    end
+    virtualenv_install_with_resources
   end
 
   test do

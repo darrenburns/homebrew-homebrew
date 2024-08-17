@@ -9,7 +9,7 @@ class Posting < Formula
 
   depends_on "cmake" => :build
   depends_on "rust" => :build
-  depends_on "cython" => :build
+  depends_on "cython"
   depends_on "python@3.11"
 
   resource "annotated-types" do

@@ -1,3 +1,3 @@
-This is the Homebrew Forumla for [Posting](https://github.com/darrenburns/posting).
+This is the Homebrew Formula for [Posting](https://github.com/darrenburns/posting).
 
 https://posting.sh

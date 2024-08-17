@@ -162,14 +162,12 @@ class Posting < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3.11")
+    virtualenv = virtualenv_create(libexec, "python3.11")
     # Install all resources directly into the virtualenv
     resources.each do |r|
-      r.stage do
-        system venv.pip_install_and_link_resource(r)
-      end
+      virtualenv.pip_install resource(r)
     end
-    venv.pip_install_and_link buildpath
+    virtualenv.pip_install_and_link buildpath
   end
 
   test do

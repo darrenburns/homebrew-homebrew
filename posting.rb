@@ -9,7 +9,6 @@ class Posting < Formula
 
   depends_on "cmake" => :build
   depends_on "rust" => :build
-  depends_on "cython"
   depends_on "python@3.10"
 
   resource "annotated-types" do
@@ -135,6 +134,12 @@ class Posting < Formula
   resource "textual-autocomplete" do
     url "https://files.pythonhosted.org/packages/ed/96/c0d620cf8642648608e0618251886b9a333b536d43ce8c6766a983732a8e/textual_autocomplete-3.0.0a9.tar.gz"
     sha256 "b5f3e3148b793f172afe643a5b2188c5ec14fcb42b639b98b23131c27e52de85"
+  end
+  
+  # Cython is a dependency of tree-sitter-languages
+  resource "Cython" do
+    url "https://files.pythonhosted.org/packages/84/4d/b720d6000f4ca77f030bd70f12550820f0766b568e43f11af7f7ad9061aa/cython-3.0.11.tar.gz"
+    sha256 "7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff"
   end
 
   resource "tree-sitter" do

@@ -5,20 +5,20 @@
 class Dv < Formula
   desc "A beautiful, snappy, and highly interactive tool for exploring diffs without leaving your terminal."
   homepage "https://github.com/darrenburns/dv"
-  version "0.1.0-alpha.3"
+  version "0.2.0-alpha.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/darrenburns/dv/releases/download/v0.1.0-alpha.3/dv_0.1.0-alpha.3_darwin_amd64.tar.gz"
-      sha256 "f15d37d1aec80d7f993fae23d6e3413b4ba77b7e483873767ae3115ce1022547"
+      url "https://github.com/darrenburns/dv/releases/download/v0.2.0-alpha.1/dv_0.2.0-alpha.1_darwin_amd64.tar.gz"
+      sha256 "db0a2df73d972a2e2e30b83e37b6aae8a69f4d7fcbd7e54b1a3183f159d7f770"
 
       def install
         bin.install "dv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/darrenburns/dv/releases/download/v0.1.0-alpha.3/dv_0.1.0-alpha.3_darwin_arm64.tar.gz"
-      sha256 "7417f20f30e45e484bb3b0284edd0cd9cecb83b461cf3e71b2f2b69077d5594b"
+      url "https://github.com/darrenburns/dv/releases/download/v0.2.0-alpha.1/dv_0.2.0-alpha.1_darwin_arm64.tar.gz"
+      sha256 "881370320db84f3a8e5b912742771e09c60ff40b919cf5ba6b2e3b35cab370d2"
 
       def install
         bin.install "dv"
@@ -28,15 +28,15 @@ class Dv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darrenburns/dv/releases/download/v0.1.0-alpha.3/dv_0.1.0-alpha.3_linux_amd64.tar.gz"
-      sha256 "26133ea4c7f3039a0ead687076f4fdad2c08c31160b024323427a17fef28cbc2"
+      url "https://github.com/darrenburns/dv/releases/download/v0.2.0-alpha.1/dv_0.2.0-alpha.1_linux_amd64.tar.gz"
+      sha256 "4c5fb3e37aa8e0a9fa1d509b9bd1877c20ce23f77967d9fa56359c843fab8036"
       def install
         bin.install "dv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darrenburns/dv/releases/download/v0.1.0-alpha.3/dv_0.1.0-alpha.3_linux_arm64.tar.gz"
-      sha256 "e0ce57d73391550434bb8187ea4280568d60c4a1685852c77ad6a433f5fd1898"
+      url "https://github.com/darrenburns/dv/releases/download/v0.2.0-alpha.1/dv_0.2.0-alpha.1_linux_arm64.tar.gz"
+      sha256 "947c84c8b0a9513d357c1515f2e20c52a2ae1a96cf5401695a6bab0b1bcb2e38"
       def install
         bin.install "dv"
       end

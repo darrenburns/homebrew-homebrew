@@ -1,3 +1,5 @@
-This is the Homebrew Formula for [Posting](https://github.com/darrenburns/posting).
+Homebrew formulae for
 
-https://posting.sh
+- [Posting](https://github.com/darrenburns/posting).
+- [dv](https://github.com/darrenburns/dv)
+

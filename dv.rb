@@ -5,20 +5,20 @@
 class Dv < Formula
   desc "A beautiful, snappy, and highly interactive tool for exploring diffs without leaving your terminal."
   homepage "https://github.com/darrenburns/dv"
-  version "0.3.0-alpha.1"
+  version "0.4.0-beta.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/darrenburns/dv/releases/download/v0.3.0-alpha.1/dv_0.3.0-alpha.1_darwin_amd64.tar.gz"
-      sha256 "0744d10d9546c58b06efcecb4289b939279882d7b7e47fcf3b924ebea5338526"
+      url "https://github.com/darrenburns/dv/releases/download/v0.4.0-beta.1/dv_0.4.0-beta.1_darwin_amd64.tar.gz"
+      sha256 "7a257b8457f8abfab7c97fe6392168df97769c26f4b031e074eefba6ea70c3c0"
 
       define_method(:install) do
         bin.install "dv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/darrenburns/dv/releases/download/v0.3.0-alpha.1/dv_0.3.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "a1d45f4c50579d5487a43751c4fb350141eddd3a50b4f813e0210654dc9f0cd1"
+      url "https://github.com/darrenburns/dv/releases/download/v0.4.0-beta.1/dv_0.4.0-beta.1_darwin_arm64.tar.gz"
+      sha256 "d48d86c87db1df561f0104abee1187a533ca30360e8f05ab001555f19888a7fe"
 
       define_method(:install) do
         bin.install "dv"
@@ -28,15 +28,15 @@ class Dv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darrenburns/dv/releases/download/v0.3.0-alpha.1/dv_0.3.0-alpha.1_linux_amd64.tar.gz"
-      sha256 "d01a8b31546b153726c2781b41a74c8b6d0f94df4fa8826565872ea2d57a0c09"
+      url "https://github.com/darrenburns/dv/releases/download/v0.4.0-beta.1/dv_0.4.0-beta.1_linux_amd64.tar.gz"
+      sha256 "e25e5fc6bf61e51bfe5545d228169b51975b06e8e30ba54807f6f8bac6850ee3"
       define_method(:install) do
         bin.install "dv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darrenburns/dv/releases/download/v0.3.0-alpha.1/dv_0.3.0-alpha.1_linux_arm64.tar.gz"
-      sha256 "6cf92c6f76413e4a7e0efdcafd71f26559c440c75120593560711cd5f54cc3dc"
+      url "https://github.com/darrenburns/dv/releases/download/v0.4.0-beta.1/dv_0.4.0-beta.1_linux_arm64.tar.gz"
+      sha256 "49d853f63c4932f595f9970b30aaee571e684bbe610e2ba560d51a615be669c9"
       define_method(:install) do
         bin.install "dv"
       end
